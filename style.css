@@ -861,8 +861,8 @@ header button{
     #cocktails_resultst{flex-direction: column;}
     #filters{flex-direction: row;justify-content: flex-start;overflow-x: auto;scroll-behavior: smooth;white-space: nowrap;padding-bottom: 0;}
     #filters::-webkit-scrollbar{display: none;}
-    #cocktail_results_container{width: 335px;}
-    .results_box{width: 150px;}
+    #cocktail_results_container{width: fit-content;justify-content: center;}
+    .results_box{width: 125px;}
 }
 
 @media(max-width: 425px){
