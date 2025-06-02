@@ -1,0 +1,106 @@
+[
+    {
+      "id": "c1",
+      "type": "cocktail",
+      "title": "royal sour",
+      "ingredients_desc" : "gin & orange",
+      "image": "royal_sour.png",
+
+      "alcool": ["gin","riga black"],
+      "jus": ["orange"],
+      "boisson": [],
+      "sirop": ["orgeat"],
+      "fruits": ["orange"]
+    },
+    {
+      "id": "c2",
+      "type": "cocktail",
+      "title": "mojito pastèque",
+      "ingredients_desc" : "rhum & pastèque",
+      "image": "mojito_pasteque.png",
+
+      "alcool": ["rhum blanc"],
+      "jus": [],
+      "boisson": ["eau gazeuse"],
+      "sirop": ["sucre de canne"],
+      "fruits": ["pastèque", "menthe", "citron vert"]
+    },
+    {
+      "id": "c3",
+      "type": "cocktail",
+      "title": "malibu tropical",
+      "ingredients_desc" : "malibu & ananas",
+      "image": "malibu_tropical.png",
+
+      "alcool": ["malibu"],
+      "jus": ["ananas"],
+      "boisson": [],
+      "sirop": ["fruits exotiques"],
+      "fruits": ["ananas"]
+    },
+    {
+      "id": "c4",
+      "type": "cocktail",
+      "title": "pornstar martini",
+      "ingredients_desc" : "vodka & fruit de la passion",
+      "image": "pornstar_martini.png",
+
+      "alcool": ["vodka", "passoã", "champagne"],
+      "jus": ["citron vert"],
+      "boisson": [],
+      "sirop": ["vanille"],
+      "fruits": ["fruit de la passion"]
+    },
+    {
+      "id": "c5",
+      "type": "cocktail",
+      "title": "aperol spritz",
+      "ingredients_desc" : "proscecco & aperol",
+      "image": "aperol_spritz.png",
+
+      "alcool": ["proscecco", "aperol"],
+      "jus": [],
+      "boisson": [],
+      "sirop": [],
+      "fruits": []
+    },
+    {
+      "id": "m1",
+      "type": "mocktail",
+      "title": "virgin mojito",
+      "ingredients_desc" : "eau pétillante & menthe",
+      "image": "virgin_mojito.png",
+
+      "alcool": [],
+      "jus": [],
+      "boisson": ["eau gazeuse"],
+      "sirop": ["sucre de canne"],
+      "fruits": ["citron vert", "menthe"]
+    },
+    {
+      "id": "m2",
+      "type": "mocktail",
+      "title": "virgin piña colada",
+      "ingredients_desc" : "noix de coco & ananas",
+      "image": "virgin_pina_colada.png",
+
+      "alcool": [],
+      "jus": [],
+      "boisson": ["lait de coco"],
+      "sirop": [],
+      "fruits": ["ananas"]
+    },
+    {
+      "id": "m3",
+      "type": "mocktail",
+      "title": "virgin blue lagoon",
+      "ingredients_desc" : "tonic & pamplemousse",
+      "image": "virgin_blue_lagoon.png",
+
+      "alcool": [],
+      "jus": ["pamplemousse"],
+      "boisson": ["schwepps tonic"],
+      "sirop": ["curaçao bleu"],
+      "fruits": ["pamplemousse"]
+    }
+]

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
-    <title>Bastos - Mocktails</title>
+    <title>Bastos - Ingrédients</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="cocktails.js" defer></script>
+    <script src="ingredients.js" defer></script>
     <link rel="icon" href="icones/cocktail.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,7 +20,7 @@
                 <button onclick="fermer_menu()" id="close_header_box_bttn"><img src="icones/close.svg" width="35px"></button>
             </div>
             <div id="close_header_box_deco">
-                <h1>nos mocktails</h1>
+                <h1>nos ingrédients</h1>
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" id="logo_anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     x="0px" y="0px" viewBox="0 0 1559.1 326" style="enable-background:new 0 0 1559.1 326;" xml:space="preserve">
@@ -66,7 +66,7 @@
                     <ul>
                         <li><img src="icones/B.svg"><a href="index.html">accueil</a><img src="icones/fleche.svg"></li>
                         <li><img src="icones/cocktail.svg"><a href="cocktails.html">cocktails</a><img src="icones/fleche.svg"></li>
-                        <li><img src="icones/orange.svg"><a href="ingredients.html">ingrédients</a><img src="icones/fleche.svg"></li>
+                        <li><img src="icones/mocktail.svg"><a href="mocktails.html">mocktails</a><img src="icones/fleche.svg"></li>
                         <li><img src="icones/plus.svg"><a href="en_savoir_plus.html">en savoir plus</a><img src="icones/fleche.svg"></li>
                         <li><img src="icones/"><a href="contact.html">nous contacter</a><img src="icones/fleche.svg"></li>
                     </ul>
@@ -74,18 +74,19 @@
             </div>
         </div>
     </div>
-    <div class="element" id="mocktail_page">
+    <div class="element" id="ingredients_page">
         <header>
             <button onclick="retour_menu()"><img src="icones/B.svg" width="35px" class="logo_fixed"></button>
             <button onclick="ouvrir_menu()"><img src="icones/menu.svg" width="35px" class="menu_icon"></button>
         </header>
         <div class="element_title">
-            <h1>nos mocktails</h1>
-            <p>nos mélanges non alcolisées</p>
+            <h1>nos ingredients</h1>
+            <p>séléction à partir de vos goûts</p>
             <img src="icones/B_bar_2.svg" width="150px">
         </div>
     </div>
     <div class="search" id="cocktails_resultst">
+        <div id="filters"></div>
         <div id="cocktail_results">
             <div id="loading" style="display: flex;">
                     <div id="loading_div">
