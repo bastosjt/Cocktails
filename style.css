@@ -21,10 +21,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .element_title{
@@ -38,6 +40,7 @@ body{
     font-family: "Cinzel", serif;
     font-size: 3rem;
     letter-spacing: 2.5px;
+    text-align: center;
 }
 
 .element_title p, .element_footer h1, #ingredients_desc{
@@ -764,7 +767,7 @@ header button{
 }
 
 #loading p, #no_result p{
-    margin: 50px;
+    margin: 50px 0;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -783,6 +786,7 @@ header button{
 
 @media(max-width: 1350px){
     #filters label{display: flex;flex-direction: column;}
+    #filters label select{margin-top: 10px;}
 }
 
 @media(max-width: 1250px){
@@ -821,14 +825,16 @@ header button{
 
 @media(max-width: 750px){
     header li {margin: 0 25px;}
-    #cocktail_results_container{width: 285px}
-    .results_box{width: 125px;height: 50%;}
+    #cocktail_results_container{width: 390px}
+    .results_box{width: 150px;height: 50%;}
     .results_box_title{height: 30px;}
     .results_box_title h1{padding-bottom: 5px;}
 }
 
 @media(max-width: 625px){
     #ingredients_container_box{flex-direction: column;}
+    #cocktail_results_container{width: 285px;}
+    .results_box{width: 125px;}
 }
 
 @media(max-width: 600px){
@@ -849,12 +855,14 @@ header button{
     #vertical_header{width: 100%;}
     .element_box{width: 50%;}
     .element_box:nth-child(2){visibility: hidden;position: absolute;}
-    .element_title h1{width: 90%; margin: 0;}
+    .element_title h1{margin: 0 auto; padding: 0 auto;}
     .element_title p{width: 90%; margin: 0;}
 
     #cocktails_resultst{flex-direction: column;}
-    #filters{flex-direction: row;justify-content: flex-start;overflow-x: auto;scroll-behavior: smooth;white-space: nowrap;}
+    #filters{flex-direction: row;justify-content: flex-start;overflow-x: auto;scroll-behavior: smooth;white-space: nowrap;padding-bottom: 0;}
     #filters::-webkit-scrollbar{display: none;}
+    #cocktail_results_container{width: 335px;}
+    .results_box{width: 150px;}
 }
 
 @media(max-width: 425px){
