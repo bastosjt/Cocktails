@@ -2,11 +2,11 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-
-        <title>Bastos - Cocktails</title>
+        
+        <title>Bastos - En savoir plus</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
-        <script src="cocktails.js" defer></script>
+        <script src="index.js" defer></script>
         <link rel="icon" href="icones/cocktail.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -68,41 +68,27 @@
                     <div id="phone_header_minibox_ul">
                         <ul>
                             <li><img src="icones/B.svg"><a href="index.html">accueil</a><img src="icones/fleche.svg"></li>
+                            <li><img src="icones/cocktail.svg"><a href="cocktails.html">cocktails</a><img src="icones/fleche.svg"></li>
                             <li><img src="icones/mocktail.svg"><a href="mocktails.html">mocktails</a><img src="icones/fleche.svg"></li>
                             <li><img src="icones/orange.svg"><a href="ingredients.html">ingrédients</a><img src="icones/fleche.svg"></li>
                             <li><img src="icones/plus.svg"><a href="en_savoir_plus.html">en savoir plus</a><img src="icones/fleche.svg"></li>
-                            <li><img src="icones/contact.svg"><a href="contact.html">nous contacter</a><img src="icones/fleche.svg"></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="element" id="cocktail_page">
+        <div class="element" id="en_savoir_plus_page">
             <header>
                 <button onclick="retour_menu()"><img src="icones/B.svg" width="35px" class="logo_fixed"></button>
                 <button onclick="ouvrir_menu()"><img src="icones/menu.svg" width="35px" class="menu_icon"></button>
             </header>
-            <div class="element_title">
-                <h1>nos cocktails</h1>
-                <p>nos mélanges alcolisées</p>
-                <img src="icones/B_bar_2.svg" width="150px">
-            </div>
         </div>
-        <div class="search" id="cocktails_resultst">
-            <div class="search_header">
-                <h1>nos cocktails signatures et iconiques</h1>
+        <div id="loading" style="display: flex;">
+            <div id="loading_div">
+                <div id="loading_div_rotate"></div>
+                <img src="icones/cocktail.svg" alt="cocktail">
             </div>
-            <div id="cocktail_results">
-                <div id="loading" style="display: flex;">
-                    <div id="loading_div">
-                        <div id="loading_div_rotate"></div>
-                        <img src="icones/cocktail.svg" alt="cocktail">
-                    </div>
-                    <p>Chargement</p>
-                </div>
-                <div id="cocktail_results_container_2">
-                </div>
-            </div>
+            <p>Page en cours de développement ...</p>
         </div>
     </body>
 </html>
