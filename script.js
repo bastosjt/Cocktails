@@ -22,6 +22,7 @@ function ouvrir_menu() {
   menu_bg.classList.add('active');
   menu.style.transform = 'translateX(0px)';
   menu.style.borderLeft = '1px solid #F5F5F5';
+  menu.style.transition = 'transform 0.5s ease';
   setTimeout(() => {
     menu_content.classList.add("visible");
     document.querySelector('#phone_header_box_ul ul').classList.add('active');

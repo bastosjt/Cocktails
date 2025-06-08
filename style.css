@@ -27,6 +27,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
+    overflow: hidden;
+    z-index: 0  ;
 }
 
 .element_title{
@@ -159,40 +161,40 @@ body{
 /*      ELEMENT BACKGROUNDS        */
 
 #accueil{
-    background-image: url('images/accueil_40.png');
+    background-image: url('images/accueil_upscaled_40.png');
     height: 100vh;
 }
 
 #cocktails{
-    background-image: url('images/cocktails_40.png');
+    background-image: url('images/cocktails_upscaled_40.png');
     height: 125vh;
 }
 
 #mocktails{
-    background-image: url('images/mocktails_40.png');
+    background-image: url('images/mocktails_upscaled_40.png');
     height: 125vh;
 }
 
 #ingredients{
-    background-image: url('images/ingredients_40.png');
+    background-image: url('images/ingredients_upscaled_40.png');
     height: 100vh;
 }
 
 #cocktail_page{
-    background-image: url('images/cocktails_page_40.png');
-    height: 50vh;
+    background-image: url('images/cocktails_page_upscaled_40.png');
+    height: 70vh;
     border-bottom: 1px solid #F5F5F5;
 }
 
 #mocktail_page{
-    background-image: url('images/moctkails_page_40.png');
-    height: 50vh;
+    background-image: url('images/mocktails_page_upscaled_40.png');
+    height: 70vh;
     border-bottom: 1px solid #F5F5F5;
 }
 
 #ingredients_page{
-    background-image: url('images/ingredients_page_40.png');
-    height: 50vh;
+    background-image: url('images/ingredients_page_upscaled_40.png');
+    height: 70vh;
     border-bottom: 1px solid #F5F5F5;
 }
 
@@ -257,6 +259,10 @@ header button{
   top: 20px;
   right: 20px;
   z-index: 2;
+}
+
+#vertical_header{
+    transition: transform 2s ease;
 }
 
 #vertical_header_bg {
@@ -660,7 +666,7 @@ header button{
     margin: 0 auto;
 }
 
-#cocktail_results_container{
+#cocktail_results_container, #cocktail_results_container_2{
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
@@ -782,6 +788,38 @@ header button{
   75% { transform: rotate(45deg); }
 }
 
+.search_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.search_header h1{
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 8px;
+    font-size: 1rem;
+    margin: 50px;
+}
+
+.search_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.search_header h1{
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 50px;
+    letter-spacing: 8px;
+}
+
 /*      MEDIA        */
 
 @media(max-width: 1350px){
@@ -804,6 +842,7 @@ header button{
 
 @media(max-width: 950px){
     #cocktails_resultst{flex-direction: row;}
+    #cocktail_results_container_2{width: 565px;}
     #filters{flex-direction: column;justify-content: flex-start;}
     #filters label{width: 150px;margin-bottom: 15px;}
 
@@ -834,6 +873,7 @@ header button{
 @media(max-width: 625px){
     #ingredients_container_box{flex-direction: column;}
     #cocktail_results_container{width: 285px;}
+    #cocktail_results_container_2{width: 490px;}
     .results_box{width: 125px;}
 }
 
@@ -862,6 +902,7 @@ header button{
     #filters{flex-direction: row;justify-content: flex-start;overflow-x: auto;scroll-behavior: smooth;white-space: nowrap;padding-bottom: 0;}
     #filters::-webkit-scrollbar{display: none;}
     #cocktail_results_container{width: fit-content;justify-content: center;}
+    #cocktail_results_container_2{width: fit-content;justify-content: center;}
     .results_box{width: 125px;}
 }
 

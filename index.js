@@ -1,3 +1,7 @@
+function retour_menu_index() {
+  window.location.href = 'index.html';
+}
+
 //  Génération div cocktails page d'accueil
 
 fetch('data/drinks.json')
@@ -16,7 +20,7 @@ fetch('data/drinks.json')
 
   container.innerHTML = cocktails.map(cocktail => `
     <div class="element_box" id="${cocktail.id}">
-      <img class="element_box_img" src="images/${cocktail.image}">
+      <img class="element_box_img" src="drinks/${cocktail.image}">
       <img class="element_box_b" src="icones/B.svg" width="35px">
       <div class="element_box_title">
         <h1>${cocktail.title}</h1>
@@ -44,7 +48,7 @@ fetch('data/drinks.json')
 
   container.innerHTML = mocktails.map(mocktail => `
     <div class="element_box" id="${mocktail.id}">
-      <img class="element_box_img" src="images/${mocktail.image}">
+      <img class="element_box_img" src="drinks/${mocktail.image}">
       <img class="element_box_b" src="icones/B.svg" width="35px">
       <div class="element_box_title">
         <h1>${mocktail.title}</h1>
