@@ -5,12 +5,32 @@
       "title": "royal sour",
       "ingredients_desc" : "gin & orange",
       "image": "royal_sour.png",
+      "img_landscape" : "royal_sour_landscape.png",
 
       "alcool": ["gin","riga black"],
       "jus": ["orange"],
-      "boisson": [],
+      "boisson": [],  
       "sirop": ["orgeat"],
-      "fruits": ["orange"]
+      "fruits": ["orange"],
+
+      "card_desc" : "Mélange intense de gin, de Riga Black et de jus d’orange, adouci par une touche d’orgeat",
+      "full_desc" : "Le Royal Sour est une variation élégante du célèbre sour, mêlant la puissance aromatique du gin à la richesse du Riga Black Balsam. Le jus d’orange apporte une fraîcheur fruitée, adoucie par le sirop d’orgeat aux notes d’amande. Une touche de jus de citron peut venir équilibrer l’ensemble avec une pointe d’acidité. Ce cocktail onctueux et acidulé se déguste bien frais, décoré d’un zeste ou d’une tranche d’orange pour une finition raffinée.",
+
+      "ingredients_detail": [
+        { "nom": "gin", "quantite": "4 cl" },
+        { "nom": "Riga Black", "quantite": "2 cl" },
+        { "nom": "jus d’orange", "quantite": "6 cl" },
+        { "nom": "sirop d’orgeat", "quantite": "1 cl" },
+        { "nom": "jus de citron (optionnel)", "quantite": "1 cl" },
+        { "nom": "quelques glaçons", "quantite": "" },
+        { "nom": "tranche d'une orange", "quantite": "" }
+      ],
+
+      "recette": [
+        "Dans un shaker, verser 4 cl de gin, 2 cl de Riga Black, 6 cl de jus d’orange, 1 cl de sirop d’orgeat et du jus de citron (optionnel).",
+        "Mélanger au shaker avec des glaçons.",
+        "Servir dans un verre à cocktail à l'aide d'un filtre et décorer avec un quartier d’orange."
+      ]
     },
     {
       "id": "c2",
@@ -18,12 +38,32 @@
       "title": "mojito pastèque",
       "ingredients_desc" : "rhum & pastèque",
       "image": "mojito_pasteque.png",
+      "img_landscape": "mojito_pasteque_landscape.png",
 
       "alcool": ["rhum blanc"],
       "jus": [],
       "boisson": ["eau gazeuse"],
       "sirop": ["sucre de canne"],
-      "fruits": ["pastèque", "menthe", "citron vert"]
+      "fruits": ["pastèque", "menthe", "citron vert"],
+
+      "card_desc" : "Twist fruité du mojito : rhum blanc, pastèque, citron vert et menthe, pour une fraîcheur éclatante",
+      "full_desc": "Le Mojito Pastèque revisite le mojito classique avec une touche estivale. Le rhum blanc rencontre la fraîcheur de la menthe et l'acidité du citron vert, sublimés par la douceur juteuse de la pastèque. Un trait de sirop de sucre de canne lie les saveurs, tandis que l'eau gazeuse apporte légèreté et pétillance. Un cocktail rafraîchissant, idéal pour les journées ensoleillées.",
+
+      "ingredients_detail": [
+        { "nom": "rhum blanc", "quantite": "5 cl" },
+        { "nom": "purée de pastèque", "quantite": "6 cl" },
+        { "nom": "sirop de sucre de canne", "quantite": "2 cl" },
+        { "nom": "citron vert", "quantite": "½ fruit" },
+        { "nom": "feuilles de menthe", "quantite": "8 à 10" },
+        { "nom": "eau gazeuse", "quantite": "6 cl" },
+        { "nom": "glaçons", "quantite": "" }
+      ],
+
+      "recette": [
+        "Dans un verre, écraser les feuilles de menthe avec le jus d’un demi-citron vert et le sirop de sucre de canne.",
+        "Ajouter la purée de pastèque, le rhum blanc et les glaçons.",
+        "Compléter avec de l’eau gazeuse, mélanger légèrement, puis décorer avec une feuille de menthe et une petite tranche de pastèque."
+      ]
     },
     {
       "id": "c3",
@@ -36,7 +76,9 @@
       "jus": ["ananas"],
       "boisson": [],
       "sirop": ["fruits exotiques"],
-      "fruits": ["ananas"]
+      "fruits": ["ananas"],
+
+      "card_desc" : "Cocktail doux et ensoleillé, alliant le rhum coco Malibu à la fraîcheur d’ananas et aux notes exotiques fruitées"
     },
     {
       "id": "c4",
@@ -49,7 +91,9 @@
       "jus": ["citron vert"],
       "boisson": [],
       "sirop": ["vanille"],
-      "fruits": ["fruit de la passion"]
+      "fruits": ["fruit de la passion"],
+
+      "card_desc" : ""
     },
     {
       "id": "c5",
@@ -62,7 +106,9 @@
       "jus": [],
       "boisson": [],
       "sirop": [],
-      "fruits": []
+      "fruits": [],
+
+      "card_desc" : ""
     },
     {
       "id": "m1",
@@ -75,7 +121,9 @@
       "jus": [],
       "boisson": ["eau gazeuse"],
       "sirop": ["sucre de canne"],
-      "fruits": ["citron vert", "menthe"]
+      "fruits": ["citron vert", "menthe"],
+
+      "card_desc" : "Fraîcheur pétillante de l’eau gazeuse, citron vert acidulé et menthe vivifiante, adoucie d’un léger sucre de canne"
     },
     {
       "id": "m2",
@@ -88,7 +136,9 @@
       "jus": [],
       "boisson": ["lait de coco"],
       "sirop": [],
-      "fruits": ["ananas"]
+      "fruits": ["ananas"],
+
+      "card_desc" : "Douceur crémeuse du lait de coco associée à la fraîcheur sucrée de l’ananas, pour un voyage tropical sans alcool"
     },
     {
       "id": "m3",
@@ -101,6 +151,8 @@
       "jus": ["pamplemousse"],
       "boisson": ["schwepps tonic"],
       "sirop": ["curaçao bleu"],
-      "fruits": ["pamplemousse"]
+      "fruits": ["pamplemousse"],
+
+      "card_desc" : "Cocktail sans alcool frais et pétillant, alliant l’amertume du pamplemousse, la vivacité du tonic, et une touche sucrée de curaçao bleu"
     }
 ]

@@ -85,7 +85,7 @@ fetch('data/drinks.json')
         // Affiche les résultats filtrés
         if (filtered.length > 0) {
           resultsContainer.innerHTML = filtered.map(drink => `
-            <div class="results_box" id="${drink.id}">
+            <div class="results_box" id="${drink.id}" data-id="${drink.id}">
               <img class="results_box_img" src="drinks/${drink.image}">
               <img class="results_box_b" src="icones/B.svg" width="35px">
               <div class="results_box_title">
@@ -94,6 +94,15 @@ fetch('data/drinks.json')
               </div>
             </div>
           `).join('');
+
+          document.querySelectorAll('.results_box').forEach(box => {
+  box.addEventListener('click', () => {
+    const drinkId = box.dataset.id;
+    window.location.href = `template.html?id=${drinkId}`;
+  });
+});
+
+
         } else {
           resultsContainer.innerHTML = `
             <div id="no_result">

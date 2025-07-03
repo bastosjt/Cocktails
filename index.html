@@ -24,7 +24,6 @@
                 </div>
                 <div id="close_header_box_deco">
                     <h1>bastos cocktails</h1>
-                    <?xml version="1.0" encoding="utf-8"?>
                     <svg version="1.1" id="logo_anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" viewBox="0 0 1559.1 326" style="enable-background:new 0 0 1559.1 326;" xml:space="preserve">
                         <style type="text/css">
@@ -89,7 +88,7 @@
                 </div>
                 <button onclick="ouvrir_menu()"><img src="icones/menu.svg" width="35px" class="menu_icon"></button>
             </header>
-            <div class="element_title">
+            <div class="element_title" id="">
                 <h1>bastos cocktails</h1>
                 <p>fresh awesomeness</p>
                 <img src="icones/B_bar.svg" width="150px">
@@ -125,7 +124,7 @@
             </div>
             <div class="element_footer">
                 <h1>découvrez tous nos cocktails signatures et iconiques</h1>
-                <button>découvrir</button>
+                <button onclick="aller_page_cocktails()">découvrir<img src="icones/fleche.svg" width="25px"></button>
             </div>
         </div>
         <div class="separator"></div>
@@ -139,7 +138,7 @@
             </div>
             <div class="element_footer">
                 <h1>découvrez tous nos Mocktails sans une goutte d’alcool</h1>
-                <button>découvrir</button>
+                <button onclick="aller_page_mocktails()">découvrir<img src="icones/fleche.svg" width="25px"></button>
             </div>
         </div>
         <div class="separator"></div>
@@ -162,7 +161,7 @@
             </div>
             <p id="ingredients_desc">Découvrez notre filtrage avancé et trouvez le cocktail selon vos goûts et envies</p>
             <div class="element_footer">
-                <button>découvrir</button>
+                <button onclick="aller_page_ingredients()">découvrir<img src="icones/fleche.svg" width="25px"></button>
             </div>
         </div>
         <div class="separator">

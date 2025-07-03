@@ -86,3 +86,13 @@ document.getElementById('vertical_header_bg').addEventListener('click', (event) 
     fermer_menu();
   }
 });
+
+//    Fonctions
+
+function retour_menu_index() {window.location.href = 'index.html';}
+
+function aller_page_cocktails() {window.location.href = 'cocktails.html';}
+
+function aller_page_mocktails() {window.location.href = 'mocktails.html';}
+
+function aller_page_ingredients() {window.location.href = 'ingredients.html';}
