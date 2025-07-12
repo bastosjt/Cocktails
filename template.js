@@ -39,6 +39,23 @@ fetch('data/drinks.json')
           <p>${drink.full_desc}</p>
         </div>
       </div>
+
+      <h1 class="cocktail_desc_container_titles_h1">matériel</h1>
+      <div class="cocktail_desc_container">
+        <div class="cocktail_desc_img">
+          <img src="icones/materiel.svg" height="50px" width="50px">
+        </div>
+        <h1 class="cocktail_desc_container_titles_h1_mobile">ingrédients</h1>
+        <div class="cocktail_desc_line"></div>
+        <div class="cocktail_desc_detail">
+          <ul class="ingredients_list">
+            ${drink.materiel_detail.map(mat => `
+              <li>${mat}</li>
+            `).join('')}
+          </ul>
+        </div>
+      </div>
+
       <h1 class="cocktail_desc_container_titles_h1">ingrédients</h1>
       <div class="cocktail_desc_container">
         <div class="cocktail_desc_img">
@@ -54,7 +71,8 @@ fetch('data/drinks.json')
           </ul>
         </div>
       </div>
-      <h1 class="cocktail_desc_container_titles_h1">recette</h1>
+
+      <h1 class="cocktail_desc_container_titles_h1">préparation</h1>
       <div class="cocktail_desc_container">
         <div class="cocktail_desc_img">
           <img src="icones/shaker.svg" height="50px" width="50px" id="shaker_icon">
@@ -64,7 +82,10 @@ fetch('data/drinks.json')
         <div class="cocktail_desc_detail">
           <ul class="recette_list">
             <ol class="recette_list">
-              ${drink.recette.map(etape => `<li>${etape}</li>`).join('')}
+              ${drink.recette_title.map((etape_title, index) => `
+                <li>${etape_title}</li>
+                <p>${drink.recette_task[index]}</p>
+              `).join('')}
             </ol>
           </ul>
         </div>

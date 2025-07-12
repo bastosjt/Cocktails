@@ -14,7 +14,14 @@
       "fruits": ["orange"],
 
       "card_desc" : "Mélange intense de gin, de Riga Black et de jus d’orange, adouci par une touche d’orgeat",
-      "full_desc" : "Le Royal Sour est une variation élégante du célèbre sour, mêlant la puissance aromatique du gin à la richesse du Riga Black Balsam. Le jus d’orange apporte une fraîcheur fruitée, adoucie par le sirop d’orgeat aux notes d’amande. Une touche de jus de citron peut venir équilibrer l’ensemble avec une pointe d’acidité. Ce cocktail onctueux et acidulé se déguste bien frais, décoré d’un zeste ou d’une tranche d’orange pour une finition raffinée.",
+      "full_desc" : "Le Royal Sour est une variation élégante du célèbre sour, mêlant la puissance aromatique du gin à la richesse du Riga Black Balsam. Le jus d’orange apporte une fraîcheur fruitée, adoucie par le sirop d’orgeat aux notes d’amande. Ce cocktail onctueux et acidulé se déguste bien frais, décoré d’un zeste ou d’une tranche d’orange pour une finition raffinée.",
+
+      "materiel_detail": [
+        "un verre type old Fashioned ou tumbler (petit)",
+        "un shaker à cocktail",
+        "un doseur à alcool",
+        "une passoire à cocktail (filtre)"
+      ],
 
       "ingredients_detail": [
         { "nom": "gin", "quantite": "4 cl" },
@@ -23,13 +30,18 @@
         { "nom": "sirop d’orgeat", "quantite": "1 cl" },
         { "nom": "jus de citron (optionnel)", "quantite": "1 cl" },
         { "nom": "quelques glaçons", "quantite": "" },
-        { "nom": "tranche d'une orange", "quantite": "" }
+        { "nom": "½ d'une tranche d'orange sèche", "quantite": "" }
       ],
 
-      "recette": [
-        "Dans un shaker, verser 4 cl de gin, 2 cl de Riga Black, 6 cl de jus d’orange, 1 cl de sirop d’orgeat et du jus de citron (optionnel).",
-        "Mélanger au shaker avec des glaçons.",
-        "Servir dans un verre à cocktail à l'aide d'un filtre et décorer avec un quartier d’orange."
+      "recette_title": [
+        "Préparation du cocktail",
+        "Mélange au shaker",
+        "Finalisation du cocktail"
+      ],
+      "recette_task": [
+        "Dans le shaker, versez le gin, le jus d’orange, le sirop d’orgeat et le jus de citron (optionnel).",
+        "Mettez quelques glaçons dans le shaker et mélangez 10s. Egalement mettez quelques glaçons dans le verre.",
+        "Versez dans le verre le mélange du shaker à l'aide du filtre. Versez le riga black pour former un dégradé. Pour finir, décorer avec ½ d’'une tranche d'orange sèche."
       ]
     },
     {
@@ -47,7 +59,14 @@
       "fruits": ["pastèque", "menthe", "citron vert"],
 
       "card_desc" : "Twist fruité du mojito : rhum blanc, pastèque, citron vert et menthe, pour une fraîcheur éclatante",
-      "full_desc": "Le Mojito Pastèque revisite le mojito classique avec une touche estivale. Le rhum blanc rencontre la fraîcheur de la menthe et l'acidité du citron vert, sublimés par la douceur juteuse de la pastèque. Un trait de sirop de sucre de canne lie les saveurs, tandis que l'eau gazeuse apporte légèreté et pétillance. Un cocktail rafraîchissant, idéal pour les journées ensoleillées.",
+      "full_desc": "Le Mojito Pastèque revisite le mojito classique avec une touche estivale. Le rhum blanc rencontre la fraîcheur de la menthe et l'acidité du citron vert, sublimés par la douceur juteuse de la pastèque. Un cocktail rafraîchissant, idéal pour les journées ensoleillées.",
+
+      "materiel_detail": [
+        "un verre type type Highball (long)",
+        "un doseur à alcool",
+        "pillon à cocktail",
+        "une cuillère à mélange"
+      ],
 
       "ingredients_detail": [
         { "nom": "rhum blanc", "quantite": "5 cl" },
@@ -56,13 +75,18 @@
         { "nom": "citron vert", "quantite": "½ fruit" },
         { "nom": "feuilles de menthe", "quantite": "8 à 10" },
         { "nom": "eau gazeuse", "quantite": "6 cl" },
-        { "nom": "glaçons", "quantite": "" }
+        { "nom": "morceaux de glaçons", "quantite": "" }
       ],
 
-      "recette": [
-        "Dans un verre, écraser les feuilles de menthe avec le jus d’un demi-citron vert et le sirop de sucre de canne.",
-        "Ajouter la purée de pastèque, le rhum blanc et les glaçons.",
-        "Compléter avec de l’eau gazeuse, mélanger légèrement, puis décorer avec une feuille de menthe et une petite tranche de pastèque."
+      "recette_title": [
+        "Préparation de la purée de pastèque",
+        "Ajout des ingrédients",
+        "Finalisation du cocktail"
+      ],
+      "recette_task": [
+        "Dans le verre, broyez la pastèque à l’aide d’un pilon jusqu’à obtention d’une consistance liquide et lisse",
+        "Dans le même verre, ajoutez les feuilles de menthe avec le jus d’un demi-citron vert, le rhum blanc et le sirop de sucre de canne. Ecrasez et mélangez bien.",
+        "Versez les morceaux de glacons et complétez avec de l’eau gazeuse, mélanger légèrement avec la cuillère, puis décorer avec une petite tranche de citron."
       ]
     },
     {
@@ -71,14 +95,42 @@
       "title": "malibu tropical",
       "ingredients_desc" : "malibu & ananas",
       "image": "malibu_tropical.png",
+      "img_landscape": "malibu_tropical_landscape.png",
 
       "alcool": ["malibu"],
       "jus": ["ananas"],
       "boisson": [],
-      "sirop": ["fruits exotiques"],
+      "sirop": ["grenadine"],
       "fruits": ["ananas"],
 
-      "card_desc" : "Cocktail doux et ensoleillé, alliant le rhum coco Malibu à la fraîcheur d’ananas et aux notes exotiques fruitées"
+      "card_desc" : "Cocktail doux et ensoleillé, alliant le rhum coco Malibu à la fraîcheur d’ananas et aux notes exotiques fruitées",
+      "full_desc": "Le Malibu Tropical est une invitation au voyage sous les tropiques. Le célèbre rhum coco Malibu apporte une douceur exotique qui se marie à merveille avec le jus d’ananas frais, pour une sensation de fraîcheur intense. Une touche de sirop de grenadine ajoute une légère note sucrée et une jolie teinte rosée, évoquant les couchers de soleil sur la plage. Ce cocktail suave et fruité se déguste très frais, décoré d’un morceau d’ananas pour une présentation paradisiaque.",
+
+      "materiel_detail": [
+        "un verre type old Fashioned ou tumbler (petit)",
+        "un shaker à cocktail",
+        "un doseur à alcool",
+        "une cuillère à mélange"
+      ],
+
+      "ingredients_detail": [
+        { "nom": "malibu", "quantite": "5 cl" },
+        { "nom": "jus d'ananas", "quantite": "6 cl" },
+        { "nom": "sirop de grenadine", "quantite": "2 cl" },
+        { "nom": "morceaux de glaçons", "quantite": "" },
+        { "nom": "morceau d'ananas sec", "quantite": "" }
+      ],
+
+      "recette_title": [
+        "Préparation du cocktail",
+        "Mélange au shaker",
+        "Finalisation du cocktail"
+      ],
+      "recette_task": [
+        "Dans le shaker, versez le malibu, le jus d'ananas.",
+        "Mettez quelques glaçons dans le shaker et mélangez 10s. Egalement mettez quelques glaçons dans le verre.",
+        "Versez dans le verre le mélange du shaker à l'aide du filtre. Versez le sirop de grenadine pour former un dégradé. Pour finir, décorer morceau d'ananas sec."
+      ]
     },
     {
       "id": "c4",
@@ -86,14 +138,45 @@
       "title": "pornstar martini",
       "ingredients_desc" : "vodka & fruit de la passion",
       "image": "pornstar_martini.png",
+      "img_landscape": "pornstar_martini_landscape.png",
 
-      "alcool": ["vodka", "passoã", "champagne"],
-      "jus": ["citron vert"],
+      "alcool": ["vodka", "proscecco", "liqueur de fruit de passion"],
+      "jus": ["fruit de la passion", "citron vert"],
       "boisson": [],
       "sirop": ["vanille"],
       "fruits": ["fruit de la passion"],
 
-      "card_desc" : ""
+      "card_desc": "Cocktail sensuel et fruité, mêlant la douceur de la vanille à l’intensité de la passion pour une expérience exotique raffinée",
+      "full_desc": "Le Pornstar Martini est un cocktail iconique et audacieux, symbole d’élégance et d’évasion. Sa base de vodka vanillée apporte une rondeur suave, parfaitement équilibrée par la vivacité du fruit de la passion frais. Ce cocktail offre un contraste pétillant et raffiné. À savourer très frais, dans une ambiance chic et tropicale.",
+
+      "materiel_detail": [
+        "coupe à cocktail",
+        "verre à shot",
+        "un shaker à cocktail",
+        "un doseur à alcool",
+        "une passoire à cocktail (filtre)"
+      ],
+
+      "ingredients_detail": [
+        { "nom": "vodka", "quantite": "4 cl" },
+        { "nom": "liqueur de fruit de passion", "quantite": "3 cl" },
+        { "nom": "nectar de fruit de passion", "quantite": "2 cl" },
+        { "nom": "sirop de vanille", "quantite": "2 cl" },
+        { "nom": "jus de citron vert", "quantite": "2 cl" },
+        { "nom": "1 shot de prosecco ", "quantite": "" },
+        { "nom": "morceaux de glaçons", "quantite": "" }
+      ],
+
+      "recette_title": [
+        "Préparation du cocktail",
+        "Mélange au shaker",
+        "Finalisation du cocktail"
+      ],
+      "recette_task": [
+        "Dans le shaker, Versez la vodka, la liqueur de fruit de la passion, le jus de citron vert pressé, le nectar de fruit de passion et le sirop de vanille.",
+        "Mettez quelques glaçons dans le shaker et mélangez 10s.",
+        "Versez dans la coupe à cocktail le mélange du shaker à l'aide du filtre. Remplissez le verre à shot avec le prosecco et servez à côté du pornstar martini."
+      ]
     },
     {
       "id": "c5",
@@ -101,6 +184,7 @@
       "title": "aperol spritz",
       "ingredients_desc" : "proscecco & aperol",
       "image": "aperol_spritz.png",
+      "img_landscape": "aperol_spritz_landscape.png",
 
       "alcool": ["proscecco", "aperol"],
       "jus": [],
@@ -108,7 +192,23 @@
       "sirop": [],
       "fruits": [],
 
-      "card_desc" : ""
+      "card_desc": "",
+      "full_desc": "",
+
+      "materiel_detail": [
+        ""
+      ],
+
+      "ingredients_detail": [
+        { "nom": "", "quantite": "" }
+      ],
+
+      "recette_title": [
+        ""
+      ],
+      "recette_task": [
+        ""
+      ]
     },
     {
       "id": "m1",

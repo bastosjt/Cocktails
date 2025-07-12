@@ -96,11 +96,11 @@ fetch('data/drinks.json')
           `).join('');
 
           document.querySelectorAll('.results_box').forEach(box => {
-  box.addEventListener('click', () => {
-    const drinkId = box.dataset.id;
-    window.location.href = `template.html?id=${drinkId}`;
-  });
-});
+            box.addEventListener('click', () => {
+              const drinkId = box.dataset.id;
+              window.location.href = `template.html?id=${drinkId}`;
+            });
+          });
 
 
         } else {

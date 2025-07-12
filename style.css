@@ -278,6 +278,13 @@ body{
 
 .recette_list{padding-left: 10px;}
 
+.recette_list li{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.recette_list p{margin-bottom: 20px;}
+
 #shaker_icon{
     animation: shake 3s infinite;
 }
@@ -1040,11 +1047,11 @@ header button{
 }
 
 @media(max-width:715px){
-    .cocktail_desc_container{flex-direction: column;align-items: center;}
+    .cocktail_desc_container{flex-direction: column;align-items: center;margin: 25px 0px 75px 0px;}
     .cocktail_desc_line{height: 2px; width: 300px; background-color: #F5F5F5; margin: 25px 25px;}
     .ingredients_list{padding: 0;}
     .cocktail_desc_detail{max-width: 260px;}
-    .cocktail_desc_detail p{width: 260px;margin: 0 auto;}
+    .cocktail_desc_detail p{width: 260px;}
 }
 
 @media(max-width: 625px){
