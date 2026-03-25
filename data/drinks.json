@@ -4,8 +4,8 @@
       "type": "cocktail",
       "title": "royal sour",
       "ingredients_desc" : "gin & orange",
-      "image": "royal_sour.png",
-      "img_landscape" : "royal_sour_landscape.png",
+      "image": "royal_sour.webp",
+      "img_landscape" : "royal_sour.webp",
 
       "alcool": ["gin","riga black"],
       "jus": ["orange"],
@@ -49,8 +49,7 @@
       "type": "cocktail",
       "title": "mojito pastèque",
       "ingredients_desc" : "rhum & pastèque",
-      "image": "mojito_pasteque.png",
-      "img_landscape": "mojito_pasteque_landscape.png",
+      "image": "mojito_pasteque.webp",
 
       "alcool": ["rhum blanc"],
       "jus": [],
@@ -94,8 +93,7 @@
       "type": "cocktail",
       "title": "malibu tropical",
       "ingredients_desc" : "malibu & ananas",
-      "image": "malibu_tropical.png",
-      "img_landscape": "malibu_tropical_landscape.png",
+      "image": "malibu_tropical.webp",
 
       "alcool": ["malibu"],
       "jus": ["ananas"],
@@ -137,17 +135,17 @@
       "type": "cocktail",
       "title": "pornstar martini",
       "ingredients_desc" : "vodka & fruit de la passion",
-      "image": "pornstar_martini.png",
-      "img_landscape": "pornstar_martini_landscape.png",
+      "image": "pornstar_martini.webp",
+      "img_landscape": "pornstar_martini.webp",
 
-      "alcool": ["vodka", "proscecco", "liqueur de fruit de passion"],
+      "alcool": ["vodka", "prosecco", "liqueur de fruit de passion"],
       "jus": ["fruit de la passion", "citron vert"],
       "boisson": [],
       "sirop": ["vanille"],
       "fruits": ["fruit de la passion"],
 
-      "card_desc": "Cocktail sensuel et fruité, mêlant la douceur de la vanille à l’intensité de la passion pour une expérience exotique raffinée",
-      "full_desc": "Le Pornstar Martini est un cocktail iconique et audacieux, symbole d’élégance et d’évasion. Sa base de vodka vanillée apporte une rondeur suave, parfaitement équilibrée par la vivacité du fruit de la passion frais. Ce cocktail offre un contraste pétillant et raffiné. À savourer très frais, dans une ambiance chic et tropicale.",
+      "card_desc": "Coupe onctueuse à la passion et à la vanille, rafraîchie au citron vert et servie avec son shot de prosecco pour un contraste pétillant et glamour",
+      "full_desc": "Le Pornstar Martini est un grand classique de la barmaid britannique Douglas Ankrah, né dans les années 2000 : un cocktail à la fois fruité, gourmand et festif, rapidement devenu une signature des bars chic du monde entier. Dans une coupe élégante, la vodka révèle toute la douceur du sirop de vanille, tandis que la liqueur de fruit de la passion, le nectar et le jus de citron vert apportent tension, fraîcheur et éclat exotique. Après un shake vif avec des glaçons, le mélange forme une mousse légère en surface — le signature du drink — sur laquelle on dépose traditionnellement une demi-passiflore pour souligner le parfum. À côté du verre, un shot de prosecco bien frais accompagne le tout : on peut savourer le martini pur, mêler les deux gorgée par gorgée, ou terminer par la bulle italienne pour un final lumineux. À déguster très frais, idéal en entrée de soirée ou pour un moment « statement » au bar.",
 
       "materiel_detail": [
         "coupe à cocktail",
@@ -182,32 +180,43 @@
       "id": "c5",
       "type": "cocktail",
       "title": "aperol spritz",
-      "ingredients_desc" : "proscecco & aperol",
-      "image": "aperol_spritz.png",
-      "img_landscape": "aperol_spritz_landscape.png",
+      "ingredients_desc" : "prosecco & aperol",
+      "image": "aperol_spritz.webp",
+      "img_landscape": "aperol_spritz.webp",
 
-      "alcool": ["proscecco", "aperol"],
+      "alcool": ["prosecco", "aperol"],
       "jus": [],
-      "boisson": [],
+      "boisson": ["eau gazeuse"],
       "sirop": [],
-      "fruits": [],
+      "fruits": ["orange"],
 
-      "card_desc": "",
-      "full_desc": "",
+      "card_desc": "Italie en grand verre : amertume lumineuse de l’Aperol, bulles de prosecco et touche gazeuse, pour un spritz orangé et rafraîchissant",
+      "full_desc": "L’Aperol Spritz est né dans le nord-est de l’Italie : un apéritif à base de vin effervescent et de bitter orange qui s’est imposé comme le rituel de l’aperitivo vénitien, puis des terrasses du monde entier. Son équilibre repose sur la rondeur fruitée et l’amertume douce de l’Aperol, le côté vif et festif du prosecco bien frais, et un filet d’eau gazeuse qui étire le mélange sans l’affadir. Le tout se sert dans un grand ballon rempli de glaçons, décoré d’une belle tranche d’orange pour renforcer les notes d’agrumes : pas de shaker, on monte le cocktail directement au verre pour garder les bulles. À déguster très glacé, en apéritif ou en fin d’après-midi, avec une légère amertume qui ouvre l’appétit.",
 
       "materiel_detail": [
-        ""
+        "un grand verre à vin type ballon (wine glass)",
+        "des glaçons",
+        "un doseur à alcool",
+        "une cuillère à mélange ou une tige (bar spoon)"
       ],
 
       "ingredients_detail": [
-        { "nom": "", "quantite": "" }
+        { "nom": "prosecco", "quantite": "9 cl" },
+        { "nom": "Aperol", "quantite": "6 cl" },
+        { "nom": "eau gazeuse", "quantite": "un filet (environ 3 cl)" },
+        { "nom": "glaçons", "quantite": "une grande poignée" },
+        { "nom": "tranche d’orange", "quantite": "1" }
       ],
 
       "recette_title": [
-        ""
+        "Préparation du verre",
+        "Montage du spritz",
+        "Finition"
       ],
       "recette_task": [
-        ""
+        "Remplissez le grand verre de glaçons jusqu’en haut pour garder le cocktail très frais.",
+        "Versez l’Aperol, puis le prosecco, en délicatesse pour préserver les bulles. Ajoutez un filet d’eau gazeuse et mélangez doucement une ou deux fois à la cuillère.",
+        "Décorez avec une belle tranche d’orange sur le bord du verre. Servez immédiatement, bien froid."
       ]
     },
     {
@@ -215,7 +224,7 @@
       "type": "mocktail",
       "title": "virgin mojito",
       "ingredients_desc" : "eau pétillante & menthe",
-      "image": "virgin_mojito.png",
+      "image": "virgin_mojito.webp",
 
       "alcool": [],
       "jus": [],
@@ -223,14 +232,41 @@
       "sirop": ["sucre de canne"],
       "fruits": ["citron vert", "menthe"],
 
-      "card_desc" : "Fraîcheur pétillante de l’eau gazeuse, citron vert acidulé et menthe vivifiante, adoucie d’un léger sucre de canne"
+      "card_desc" : "Fraîcheur pétillante de l’eau gazeuse, citron vert acidulé et menthe vivifiante, adoucie d’un léger sucre de canne",
+      "full_desc": "Le virgin mojito garde tout l’esprit du mojito sans alcool : menthe écrasée, citron vert vif et eau pétillante qui fait monter la fraîcheur. Le sirop de sucre de canne adoucit l’ensemble sans le rendre trop sucré. Idéal pour un apéritif léger ou une pause désaltérante.",
+
+      "materiel_detail": [
+        "un verre type Highball (long)",
+        "un pilón ou cuillère pour écraser",
+        "une cuillère à mélange"
+      ],
+
+      "ingredients_detail": [
+        { "nom": "feuilles de menthe", "quantite": "8 à 10" },
+        { "nom": "citron vert", "quantite": "½ fruit (jus)" },
+        { "nom": "sirop de sucre de canne", "quantite": "2 cl" },
+        { "nom": "eau gazeuse très fraîche", "quantite": "pour compléter" },
+        { "nom": "glaçons", "quantite": "une rasade" },
+        { "nom": "brin de menthe (décoration)", "quantite": "" }
+      ],
+
+      "recette_title": [
+        "Écrasement",
+        "Montage",
+        "Finition"
+      ],
+      "recette_task": [
+        "Dans le verre, déposez les feuilles de menthe avec le jus du demi-citron vert. Écrasez doucement avec le pilón pour libérer les arômes sans trop broyer la menthe.",
+        "Ajoutez le sirop de sucre de canne et remplissez de glaçons. Complétez avec l’eau gazeuse en versant lentement sur la glace.",
+        "Mélangez une fois délicatement avec la cuillère à mélange. Décorez d’un brin de menthe et servez aussitôt."
+      ]
     },
     {
       "id": "m2",
       "type": "mocktail",
       "title": "virgin piña colada",
       "ingredients_desc" : "noix de coco & ananas",
-      "image": "virgin_pina_colada.png",
+      "image": "virgin_pina_colada.webp",
 
       "alcool": [],
       "jus": [],
@@ -238,21 +274,75 @@
       "sirop": [],
       "fruits": ["ananas"],
 
-      "card_desc" : "Douceur crémeuse du lait de coco associée à la fraîcheur sucrée de l’ananas, pour un voyage tropical sans alcool"
+      "card_desc" : "Douceur crémeuse du lait de coco associée à la fraîcheur sucrée de l’ananas, pour un voyage tropical sans alcool",
+      "full_desc": "La virgin piña colada évoque la plage sans rhum : crème de coco onctueuse, jus d’ananas ensoleillé et une texture lisse obtenue au mixeur ou au shaker sec selon votre habitude. Servie très froide, elle reste douce et exotique.",
+
+      "materiel_detail": [
+        "un mixeur plongeant ou blender (ou shaker dry shake pour une version légère)",
+        "un verre hurricane ou long drink",
+        "un doseur"
+      ],
+
+      "ingredients_detail": [
+        { "nom": "jus d’ananas", "quantite": "12 cl" },
+        { "nom": "lait de coco ou crème de coco légère", "quantite": "6 cl" },
+        { "nom": "sirop de sucre de canne (optionnel)", "quantite": "1 cl" },
+        { "nom": "glaçons", "quantite": "une poignée pour mixer puis pour servir" },
+        { "nom": "morceau d’ananas (décoration)", "quantite": "" }
+      ],
+
+      "recette_title": [
+        "Mixage",
+        "Service",
+        "Décoration"
+      ],
+      "recette_task": [
+        "Versez le jus d’ananas, le lait de coco et éventuellement le sirop dans le mixeur avec les glaçons. Mixez jusqu’à obtenir une mousse lisse et homogène (ou secouez vigoureusement 15–20 s dans un shaker si vous préférez).",
+        "Remplissez le verre de glaçons frais et versez le mélange filtré pour une texture veloutée.",
+        "Terminez par un morceau d’ananas sur le bord du verre. Servez très froid."
+      ]
     },
     {
       "id": "m3",
       "type": "mocktail",
       "title": "virgin blue lagoon",
       "ingredients_desc" : "tonic & pamplemousse",
-      "image": "virgin_blue_lagoon.png",
+      "image": "virgin_blue_lagoon.webp",
 
       "alcool": [],
       "jus": ["pamplemousse"],
       "boisson": ["schwepps tonic"],
       "sirop": ["curaçao bleu"],
-      "fruits": ["pamplemousse"],
+      "fruits": ["pamplemousse", "orange", "cerise"],
 
-      "card_desc" : "Cocktail sans alcool frais et pétillant, alliant l’amertume du pamplemousse, la vivacité du tonic, et une touche sucrée de curaçao bleu"
+      "card_desc" : "Mocktail pétillant bleu clair, tonic et pamplemousse, sirop de curaçao bleu sans alcool — servi en coupe façon pornstar, quart d’orange et cerise",
+      "full_desc" : "Le Virgin Blue Lagoon reprend l’esprit du cocktail bleu lagon sans une goutte d’alcool. La base se compose d’un jus de pamplemousse frais, à la fois vif et légèrement amer, que le tonic Schweppes fait monter en bulles. Un filet de sirop de curaçao bleu sans alcool colore le tout en bleu azur clair et apporte une douceur orangée discrète. Le mélange se monte au verre, sur glaçons, dans une coupe élégante façon martini — pour un rendu chic et lumineux. À servir très frais, avec un quartier d’orange sur le bord du verre et une cerise placée devant, pour un clin d’œil visuel au classique tropical.",
+
+      "materiel_detail": [
+        "une coupe à cocktail (verre type martini / pornstar martini)",
+        "des glaçons",
+        "un doseur à alcool",
+        "une cuillère à mélange (bar spoon)"
+      ],
+
+      "ingredients_detail": [
+        { "nom": "sirop de curaçao bleu sans alcool", "quantite": "2 cl" },
+        { "nom": "jus de pamplemousse frais", "quantite": "5 cl" },
+        { "nom": "Schweppes tonic", "quantite": "environ 8 cl (pour compléter)" },
+        { "nom": "glaçons", "quantite": "une rasade" },
+        { "nom": "quartier d’orange (1/4 de tranche)", "quantite": "" },
+        { "nom": "cerise au sirop (ou cerise confite)", "quantite": "1" }
+      ],
+
+      "recette_title": [
+        "Préparation du verre",
+        "Montage du mocktail",
+        "Décoration"
+      ],
+      "recette_task": [
+        "Remplissez la coupe de glaçons pour bien la rafraîchir.",
+        "Versez le sirop de curaçao bleu sans alcool et le jus de pamplemousse. Complétez avec le Schweppes tonic très frais. Mélangez délicatement une à deux fois à la cuillère à mélange.",
+        "Ajoutez un quartier d’orange sur le bord du verre et une cerise posée devant le verre sur le bar. Servez aussitôt."
+      ]
     }
 ]

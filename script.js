@@ -21,8 +21,7 @@ function ouvrir_menu() {
   document.body.classList.add('no-scroll');
   menu_bg.classList.add('active');
   menu.style.transform = 'translateX(0px)';
-  menu.style.borderLeft = '1px solid #F5F5F5';
-  menu.style.transition = 'transform 0.5s ease';
+  menu.style.transition = 'transform 0.38s cubic-bezier(0.22, 1, 0.36, 1)';
   setTimeout(() => {
     menu_content.classList.add("visible");
     document.querySelector('#phone_header_box_ul ul').classList.add('active');
@@ -56,7 +55,6 @@ function fermer_menu() {
 
   menu_bg.classList.remove('active');
   menu.style.transform = 'translateX(100%)';
-  menu.style.borderLeft = '0px solid #F5F5F5';
 
   menu_content.classList.remove("visible");
 
@@ -96,3 +94,11 @@ function aller_page_cocktails() {window.location.href = 'cocktails.html';}
 function aller_page_mocktails() {window.location.href = 'mocktails.html';}
 
 function aller_page_ingredients() {window.location.href = 'ingredients.html';}
+
+function revealImagesWhenLoaded(container) {
+  if (!container) return;
+  container.querySelectorAll('.element_box_img, .results_box_img').forEach(img => {
+    if (img.complete) img.classList.add('loaded');
+    else img.addEventListener('load', () => img.classList.add('loaded'));
+  });
+}

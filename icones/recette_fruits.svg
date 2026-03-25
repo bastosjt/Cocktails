@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="rfG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5F5" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#C4A574" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <!-- Segment dagrumes stylisé -->
+  <path d="M40 12c14 8 22 22 22 38a22 22 0 1 1-44 0c0-16 8-30 22-38Z" stroke="url(#rfG)" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M40 22v36M28 32c8 4 16 4 24 0M32 48c5 3 11 3 16 0" stroke="#F5F5F5" stroke-width="1.2" stroke-linecap="round" opacity="0.55"/>
+  <!-- Feuille -->
+  <path d="M54 52c8-6 12-14 11-22-6 2-12 8-14 16-1 4 0 8 3 11 2 2 5 2 8-1" stroke="#F5F5F5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <!-- Baies -->
+  <circle cx="22" cy="30" r="3.2" stroke="#F5F5F5" stroke-width="1.2" fill="none" opacity="0.85"/>
+  <circle cx="18" cy="42" r="2.6" stroke="#F5F5F5" stroke-width="1.2" fill="none" opacity="0.7"/>
+</svg>

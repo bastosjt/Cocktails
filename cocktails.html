@@ -6,6 +6,7 @@
         <title>Bastos - Cocktails</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
+        <script src="page-hero-animations.js" defer></script>
         <script src="cocktails.js" defer></script>
         <link rel="icon" href="icones/cocktail.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="page_hero_animated">
         <div id="vertical_header_bg"></div>
         <div id="vertical_header">
             <div id="phone_header_box">
@@ -70,24 +71,29 @@
                             <li><img src="icones/B.svg"><a href="index.html">accueil</a><img src="icones/fleche.svg"></li>
                             <li><img src="icones/mocktail.svg"><a href="mocktails.html">mocktails</a><img src="icones/fleche.svg"></li>
                             <li><img src="icones/orange.svg"><a href="ingredients.html">ingrédients</a><img src="icones/fleche.svg"></li>
-                            <li><img src="icones/plus.svg"><a href="en_savoir_plus.html">en savoir plus</a><img src="icones/fleche.svg"></li>
-                            <li><img src="icones/contact.svg"><a href="contact.html">nous contacter</a><img src="icones/fleche.svg"></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <header class="header_fixed">
+            <button onclick="retour_menu_index()"><img src="icones/B.svg" width="35px" class="logo_fixed"></button>
+            <button onclick="ouvrir_menu()"><img src="icones/menu.svg" width="35px" class="menu_icon"></button>
+        </header>
         <div class="element" id="cocktail_page">
-            <header>
-                <button onclick="retour_menu()"><img src="icones/B.svg" width="35px" class="logo_fixed"></button>
-                <button onclick="ouvrir_menu()"><img src="icones/menu.svg" width="35px" class="menu_icon"></button>
-            </header>
+            <div id="header_box" class="header_nav_scroll">
+                <ul>
+                    <li><a href="cocktails.html">cocktails</a></li>
+                    <li><a href="mocktails.html">mocktails</a></li>
+                    <li><a href="ingredients.html">ingrédients</a></li>
+                </ul>
+            </div>
             <div class="element_title">
                 <h1>nos cocktails</h1>
                 <p>nos mélanges alcolisées</p>
-                <img src="icones/B_bar_2.svg" width="150px">
             </div>
         </div>
+        <div class="separator page_hero_fade" aria-hidden="true"></div>
         <div class="search" id="cocktails_resultst">
             <div class="search_header">
                 <h1>nos cocktails signatures et iconiques</h1>

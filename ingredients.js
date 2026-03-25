@@ -86,7 +86,7 @@ fetch('data/drinks.json')
         if (filtered.length > 0) {
           resultsContainer.innerHTML = filtered.map(drink => `
             <div class="results_box" id="${drink.id}" data-id="${drink.id}">
-              <img class="results_box_img" src="drinks/${drink.image}">
+              <div class="results_box_img_wrapper"><img class="results_box_img" src="drinks/${drink.image}" alt=""></div>
               <img class="results_box_b" src="icones/B.svg" width="35px">
               <div class="results_box_title">
                 <h1>${drink.title}</h1>
@@ -94,6 +94,8 @@ fetch('data/drinks.json')
               </div>
             </div>
           `).join('');
+
+          revealImagesWhenLoaded(resultsContainer);
 
           document.querySelectorAll('.results_box').forEach(box => {
             box.addEventListener('click', () => {

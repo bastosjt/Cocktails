@@ -2,36 +2,33 @@
 
 // Header
 const header = document.querySelector("header");
-header.style.opacity = 0;
 
 // Element h1
 const ElementTitle_h1 = document.querySelector(".element_title h1");
-ElementTitle_h1.style.opacity = 0;
 
 const ElementTitle_p = document.querySelector(".element_title p");
-ElementTitle_p.style.opacity = 0;
 
-const ElementTitle_img = document.querySelector(".element_title img");
-ElementTitle_img.style.opacity = 0;
+const heroBarImg = document.querySelector("#accueil .hero_bar_img");
 
 window.onload = () => {
-    
-  // Header
-  header.style.animation = "LoadFadeIn 0.8s ease-out forwards";
-  header.style.animationDelay = "0.2s";
+  const ease = "cubic-bezier(0.22, 1, 0.36, 1)";
+  const duration = "1s";
 
-  // Element h1
-  ElementTitle_h1.style.animation = "LoadFadeIn 0.8s ease-out forwards, LoadUp 0.8s ease-out forwards";
-  ElementTitle_h1.style.animationDelay = "0.4s";
+  // Header – fade discret
+  header.style.animation = `LoadFadeIn ${duration} ${ease} forwards`;
+  header.style.animationDelay = "0.15s";
 
-  // Element p
-  ElementTitle_p.style.animation = "LoadFadeIn 0.8s ease-out forwards, LoadUp 0.8s ease-out forwards";
-  ElementTitle_p.style.animationDelay = "0.7s";
+  // Titre, sous-titre, logo – léger montant + fade, décalés
+  ElementTitle_h1.style.animation = `LoadUp ${duration} ${ease} forwards`;
+  ElementTitle_h1.style.animationDelay = "0.25s";
 
-  // Element img
-  ElementTitle_img.style.animation = "LoadFadeIn 0.8s ease-out forwards, LoadUp 0.8s ease-out forwards";
-  ElementTitle_img.style.animationDelay = "1s";
+  ElementTitle_p.style.animation = `LoadUp ${duration} ${ease} forwards`;
+  ElementTitle_p.style.animationDelay = "0.4s";
 
+  if (heroBarImg) {
+    heroBarImg.style.animation = `LoadUp ${duration} ${ease} forwards`;
+    heroBarImg.style.animationDelay = "0.55s";
+  }
 };
 
 //  Génération div cocktails page d'accueil
@@ -57,7 +54,7 @@ fetch('data/drinks.json')
           <p>${cocktail.card_desc}</p>
         </div>
       </div>
-      <img class="element_box_img" src="drinks/${cocktail.image}">
+      <div class="element_box_img_wrapper"><img class="element_box_img" src="drinks/${cocktail.image}" alt=""></div>
       <img class="element_box_b" src="icones/B.svg" width="35px">
       <div class="element_box_title">
         <h1>${cocktail.title}</h1>
@@ -65,6 +62,7 @@ fetch('data/drinks.json')
       </div>
     </div>
   `).join('');
+  revealImagesWhenLoaded(container);
 });
 
 //  Génération div mocktails page d'accueil
@@ -90,7 +88,7 @@ fetch('data/drinks.json')
           <p>${mocktail.card_desc}</p>
         </div>
       </div>
-      <img class="element_box_img" src="drinks/${mocktail.image}">
+      <div class="element_box_img_wrapper"><img class="element_box_img" src="drinks/${mocktail.image}" alt=""></div>
       <img class="element_box_b" src="icones/B.svg" width="35px">
       <div class="element_box_title">
         <h1>${mocktail.title}</h1>
@@ -98,4 +96,5 @@ fetch('data/drinks.json')
       </div>
     </div>
   `).join('');
+  revealImagesWhenLoaded(container);
 });
