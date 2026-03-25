@@ -6,6 +6,7 @@
         <title>Name of the drink</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
+        <script src="page-hero-animations.js" defer></script>
         <script src="template.js" defer></script>
         <link rel="icon" href="icones/cocktail.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="page_hero_animated">
       <div id="vertical_header_bg"></div>
       <div id="vertical_header">
         <div id="phone_header_box">
@@ -78,13 +79,15 @@
 
     </div>
     <div class="element" id="cocktail_detail_bg_pattern"></div>
+    <header class="header_fixed">
+      <button onclick="retour_menu_index()"><img src="icones/B.svg" width="35px" class="logo_fixed"></button>
+      <button onclick="ouvrir_menu()"><img src="icones/menu.svg" width="35px" class="menu_icon"></button>
+    </header>
     <div class="element" id="cocktail_detail">
-      <header>
-        <button onclick="retour_menu_index()"><img src="icones/B.svg" width="35px" class="logo_fixed"></button>
-        <button onclick="ouvrir_menu()"><img src="icones/menu.svg" width="35px" class="menu_icon"></button>
-      </header>
-      <div class="cocktail_detail_title" id="cocktail_detail_title">
-        
+      <div id="drink_detail_page">
+        <div class="drink_detail_hero_content">
+          <div class="element_title" id="cocktail_detail_title"></div>
+        </div>
       </div>
     </div>
     <div id="cocktail_desc">

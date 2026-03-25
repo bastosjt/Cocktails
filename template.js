@@ -16,7 +16,8 @@ fetch('data/drinks.json')
     const cocktailDesc = document.getElementById('cocktail_desc');
 
     if (!drink) {
-      ContainerCocktailDetailTitle.innerHTML = '<p>Boisson introuvable.</p>';
+      ContainerCocktailDetailTitle.innerHTML = '<h1>Boisson introuvable</h1>';
+      document.dispatchEvent(new CustomEvent('drinkDetailHeroReady'));
       return;
     }
 
@@ -103,12 +104,11 @@ fetch('data/drinks.json')
     `;
 
     ContainerCocktailDetailTitle.innerHTML = `
-      <div class="cocktail_detail_title_box">
-        <h1>${drink.title}</h1>
-        <p>${drink.ingredients_desc}</p>
-        <img src="icones/B_bar_2.svg" width="150px" id="cocktail_detail_title_img">
-      </div>
+      <h1>${drink.title}</h1>
+      <p>${drink.ingredients_desc}</p>
     `;
+
+    document.dispatchEvent(new CustomEvent('drinkDetailHeroReady'));
 
     cocktailDesc.innerHTML = `
       <div class="cocktail_desc_container">

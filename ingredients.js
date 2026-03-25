@@ -54,6 +54,21 @@ fetch('data/drinks.json')
       filtersContainer.appendChild(label);
     });
 
+    const resetBtn = document.createElement('button');
+    resetBtn.type = 'button';
+    resetBtn.className = 'filters_reset_btn';
+    resetBtn.textContent = 'Réinitialiser';
+    resetBtn.setAttribute('aria-label', 'Réinitialiser tous les filtres');
+    resetBtn.addEventListener('click', () => {
+      typeSelect.value = '';
+      categories.forEach((cat) => {
+        const sel = document.getElementById(`filter-${cat}`);
+        if (sel) sel.value = '';
+      });
+      renderFilteredResults(data);
+    });
+    filtersContainer.appendChild(resetBtn);
+
     // Fonction de filtrage et d'affichage
     function renderFilteredResults(allDrinks) {
       // Affiche le loader

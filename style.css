@@ -71,8 +71,7 @@ body{
     margin-top: 8px;
 }
 
-.element_footer h1,
-#ingredients_desc{
+.element_footer h1{
     font-family: "Lexend", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -91,13 +90,13 @@ body{
     align-items: flex-start;
     justify-content: center;
     margin: 44px 0 52px 0;
-    gap: 64px;
+    gap: 80px;
     padding: 0 20px;
 }
 
 .element_box{
     width: 25%;
-    max-width: 260px;
+    max-width: 240px;
     position: relative;
     border: 1px solid rgba(245,245,245,0.16);
     transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
@@ -310,10 +309,6 @@ body{
     font-style: normal;
     font-size: 1rem;
     padding: 10px;
-}
-
-#cocktail_detail_title_img{
-    width: 150px;
 }
 
 #cocktail_detail_img{
@@ -669,7 +664,8 @@ body{
 
 #cocktail_page > *,
 #mocktail_page > *,
-#ingredients_page > *{
+#ingredients_page > *,
+#drink_detail_page > *{
     position: relative;
     z-index: 3;
 }
@@ -680,7 +676,8 @@ body{
 
 .page_hero_animated #cocktail_page .header_nav_scroll,
 .page_hero_animated #mocktail_page .header_nav_scroll,
-.page_hero_animated #ingredients_page .header_nav_scroll{
+.page_hero_animated #ingredients_page .header_nav_scroll,
+.page_hero_animated #drink_detail_page .header_nav_scroll{
     opacity: 0;
 }
 
@@ -689,7 +686,9 @@ body{
 .page_hero_animated #mocktail_page .element_title h1,
 .page_hero_animated #mocktail_page .element_title p,
 .page_hero_animated #ingredients_page .element_title h1,
-.page_hero_animated #ingredients_page .element_title p{
+.page_hero_animated #ingredients_page .element_title p,
+.page_hero_animated #drink_detail_page .element_title h1,
+.page_hero_animated #drink_detail_page .element_title p{
     opacity: 0;
     transform: translateY(28px);
     will-change: transform, opacity;
@@ -697,7 +696,8 @@ body{
 
 #cocktail_page .header_nav_scroll,
 #mocktail_page .header_nav_scroll,
-#ingredients_page .header_nav_scroll{
+#ingredients_page .header_nav_scroll,
+#drink_detail_page .header_nav_scroll{
     position: absolute;
     top: 25px;
     left: 0;
@@ -710,7 +710,8 @@ body{
 }
 #cocktail_page .header_nav_scroll ul,
 #mocktail_page .header_nav_scroll ul,
-#ingredients_page .header_nav_scroll ul{
+#ingredients_page .header_nav_scroll ul,
+#drink_detail_page .header_nav_scroll ul{
     display: flex;
     list-style: none;
     margin: 0;
@@ -718,12 +719,14 @@ body{
 }
 #cocktail_page .header_nav_scroll li,
 #mocktail_page .header_nav_scroll li,
-#ingredients_page .header_nav_scroll li{
+#ingredients_page .header_nav_scroll li,
+#drink_detail_page .header_nav_scroll li{
     margin: 0 50px;
 }
 #cocktail_page .header_nav_scroll a,
 #mocktail_page .header_nav_scroll a,
-#ingredients_page .header_nav_scroll a{
+#ingredients_page .header_nav_scroll a,
+#drink_detail_page .header_nav_scroll a{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
@@ -734,7 +737,8 @@ body{
 }
 #cocktail_page .header_nav_scroll a::after,
 #mocktail_page .header_nav_scroll a::after,
-#ingredients_page .header_nav_scroll a::after{
+#ingredients_page .header_nav_scroll a::after,
+#drink_detail_page .header_nav_scroll a::after{
     content: "";
     position: absolute;
     left: 0;
@@ -746,7 +750,8 @@ body{
 }
 #cocktail_page .header_nav_scroll a:hover::after,
 #mocktail_page .header_nav_scroll a:hover::after,
-#ingredients_page .header_nav_scroll a:hover::after{
+#ingredients_page .header_nav_scroll a:hover::after,
+#drink_detail_page .header_nav_scroll a:hover::after{
     width: 100%;
 }
 
@@ -755,9 +760,56 @@ body{
 #mocktail_page .element_title h1,
 #mocktail_page .element_title p,
 #ingredients_page .element_title h1,
-#ingredients_page .element_title p{
+#ingredients_page .element_title p,
+#drink_detail_page .element_title h1,
+#drink_detail_page .element_title p{
     color: #F5F5F5;
     text-shadow: 0 2px 4px rgba(0,0,0,0.9), 0 4px 20px rgba(0,0,0,0.7), 0 0 40px rgba(0,0,0,0.4);
+}
+
+/* Fiche boisson : bloc hero aligné cocktails / mocktails / ingrédients */
+#drink_detail_page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.drink_detail_hero_content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 0;
+}
+
+/* Fiche template : titre + accroche centrés (milieu du hero), sans marge bas héritée */
+#drink_detail_page #cocktail_detail_title.element_title{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#drink_detail_page #cocktail_detail_title.element_title h1,
+#drink_detail_page #cocktail_detail_title.element_title p{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#drink_detail_page #cocktail_detail_title.element_title p{
+    margin-bottom: 0;
+    max-width: 28em;
 }
 
 #cocktail_detail_bg_color{
@@ -779,14 +831,20 @@ body{
     top: 0;
     z-index: 2;
     background-color: #121212;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-top: 75px;
     margin-left: 75px;
     margin-right: 75px;
     width: calc(100% - 150px);
     border: 1px solid #f5f5f5a6;
-    transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+    transition: box-shadow 250ms ease, border-color 250ms ease;
     box-shadow: 0 18px 40px rgba(0,0,0,0.85);
     border-radius: 18px;
+    transform: scale(1.12);
+    transform-origin: center center;
+    animation: heroZoomOut 3.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 #cocktail_detail_bg_pattern{
@@ -799,9 +857,30 @@ body{
     pointer-events: none;
 }
 
+@media (max-width: 768px) {
+    #cocktail_detail_bg_color {
+        top: 62.5px;
+        left: 10px;
+        right: 10px;
+        height: calc(100vh - 125px);
+        width: calc(100% - 75px);
+        border-radius: 12px;
+    }
+    #cocktail_detail_bg_container {
+        margin-top: 62.5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 75px);
+        height: calc(100vh - 125px);
+        border-radius: 12px;
+    }
+}
+
 #cocktail_detail{
     height: 100vh;
     background-color: transparent;
+    position: relative;
+    z-index: 2;
 }
 
 /*      HEADER        */
@@ -1130,14 +1209,15 @@ header button{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 72px 24px 64px 24px;
+    padding: clamp(40px, 8vw, 72px) clamp(14px, 4vw, 24px) clamp(44px, 7vw, 64px) clamp(14px, 4vw, 24px);
     background-color: #121212;
 }
 
 #recettes_container{
     width: 100%;
     max-width: 1200px;
-    padding: 24px 40px 36px 40px;
+    padding: clamp(16px, 3vw, 24px) clamp(16px, 4vw, 40px) clamp(24px, 4vw, 36px) clamp(16px, 4vw, 40px);
+    box-sizing: border-box;
 }
 
 #recettes_title{
@@ -1151,8 +1231,8 @@ header button{
 #recettes_title h1{
     font-family: "Lexend", sans-serif;
     font-weight: 700;
-    font-size: 1.65rem;
-    letter-spacing: 4px;
+    font-size: clamp(1.05rem, 2.1vw + 0.65rem, 1.65rem);
+    letter-spacing: clamp(2px, 0.45vw, 4px);
     margin-bottom: 14px;
 }
 
@@ -1172,8 +1252,10 @@ header button{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 420px;
-    padding: 28px 26px 32px 26px;
+    width: min(420px, 100%);
+    max-width: 420px;
+    padding: clamp(20px, 3vw, 28px) clamp(18px, 3vw, 26px) clamp(24px, 3.5vw, 32px) clamp(18px, 3vw, 26px);
+    box-sizing: border-box;
     border-radius: 18px;
     border: 1px solid rgba(245,245,245,0.14);
     background: linear-gradient(165deg, rgba(30,30,30,0.95) 0%, #141414 45%, #0f0f0f 100%);
@@ -1234,24 +1316,24 @@ header button{
 .recettes_mini_box h1{
     font-family: "Lexend", sans-serif;
     font-weight: 500;
-    font-size: 1.08rem;
-    letter-spacing: 2.5px;
+    font-size: clamp(0.82rem, 0.85vw + 0.62rem, 1.08rem);
+    letter-spacing: clamp(1px, 0.2vw + 0.5px, 2.5px);
     margin: 14px 0 12px 0;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.45;
     color: #F5F5F5;
 }
 
 .recettes_mini_box p{
     font-family: "Lexend", sans-serif;
     font-weight: 300;
-    font-size: 0.9rem;
-    letter-spacing: 1.4px;
-    line-height: 1.65;
+    font-size: clamp(0.78rem, 0.55vw + 0.62rem, 0.9rem);
+    letter-spacing: clamp(0.35px, 0.12vw + 0.35px, 1.4px);
+    line-height: clamp(1.5, 0.04vw + 1.48, 1.65);
     text-align: center;
-    padding: 0 18px;
+    padding: 0 clamp(8px, 2.5vw, 18px);
     color: rgba(245,245,245,0.82);
-    max-width: 340px;
+    max-width: min(340px, 100%);
 }
 
 .recettes_mini_box:hover{
@@ -1279,6 +1361,7 @@ header button{
 #ingredients_card {
     max-width: 520px;
     margin: 0 auto 36px;
+    margin-bottom: 125px;
     padding: 32px 36px 28px;
     background: rgba(18, 18, 18, 0.72);
     backdrop-filter: blur(12px);
@@ -1335,14 +1418,6 @@ header button{
     text-align: center;
 }
 
-#ingredients_desc{
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto 24px;
-    padding: 0 24px;
-    margin-top: 75px;
-}
-
 /*      FILTERS        */
 
 .search{
@@ -1354,24 +1429,33 @@ header button{
 
 #filters{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
     justify-content: center;
-    padding: 20px 22.5px 10px 22.5px;
-    gap: 14px;
+    padding: 20px clamp(14px, 4vw, 22.5px) 16px clamp(14px, 4vw, 22.5px);
+    gap: clamp(12px, 2.2vw, 18px);
+    width: 100%;
+    max-width: min(960px, 100%);
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 #filters label{
-    padding: 9px 14px;
+    padding: 10px 14px 12px 14px;
     border-radius: 18px;
     margin: 0;
     font-family: "Lexend", sans-serif;
     font-weight: 500;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
+    font-size: clamp(0.65rem, 1.2vw, 0.7rem);
+    letter-spacing: clamp(1px, 0.2vw, 2px);
     border: 1px solid rgba(245,245,245,0.28);
     background-color: #171717;
     box-shadow: none;
     transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+    flex: 1 1 auto;
+    min-width: min(200px, 100%);
+    max-width: 280px;
+    box-sizing: border-box;
 }
 
 #filters label:hover{
@@ -1381,13 +1465,50 @@ header button{
 
 #filters label select, #filters label select option{
     color: #F5F5F5;
-    padding: 3px 0;
+    padding: 6px 4px;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
+    font-size: clamp(0.65rem, 1.2vw, 0.75rem);
+    letter-spacing: clamp(1px, 0.2vw, 2px);
     background-color: transparent;
     border: none;
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* Desktop / tablette : même hauteur que les encadrés #filters label (align-items: stretch sur la ligne) */
+.filters_reset_btn{
+    flex: 0 0 auto;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding: 10px 16px;
+    border-radius: 18px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.62rem, 1.1vw, 0.72rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    background: rgba(42, 74, 111, 0.35);
+    border: 1px solid rgba(64, 108, 156, 0.45);
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    box-sizing: border-box;
+    min-width: min(160px, 100%);
+}
+
+.filters_reset_btn:hover{
+    background: rgba(64, 108, 156, 0.4);
+    border-color: rgba(245, 245, 245, 0.35);
+}
+
+.filters_reset_btn:active{
+    transform: scale(0.98);
 }
 
 /*      FILTERS RESULTS        */
@@ -1401,15 +1522,21 @@ header button{
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: clamp(32px, 5vw, 52px);
     margin: 45px auto 60px auto;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: stretch;
     max-width: 1034px;
+    width: 100%;
+    padding: 0 clamp(12px, 4vw, 20px);
 }
 
+/* Largeur fixe : identique qu’il y ait 1 ou N résultats (éviter width: % qui rétrécit une carte seule) */
 .results_box{
-    width: 215px;
+    flex: 0 0 240px;
+    width: 240px;
+    max-width: 100%;
+    box-sizing: border-box;
     position: relative;
     border: 1px solid rgba(245,245,245,0.2);
     transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
@@ -1608,48 +1735,131 @@ header button{
 
 @media(max-width: 1250px){
     header a{font-size: 1rem;}
-    .recettes_mini_box h1{font-size: 0.95rem;}
-    .recettes_mini_box p{font-size: 0.88rem;}
     .element_title h1{font-size: 2.5rem;}
     .element_title p{font-size: 1rem;}
-    .element_title p, .element_footer h1, #ingredients_desc{font-size: 1rem;}
+    .element_title p, .element_footer h1{font-size: 1rem;}
 }
 
 @media(max-width: 1100px){
-    #cocktail_results{max-width: 760px;}
+    #cocktail_results{
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 clamp(12px, 3vw, 20px);
+    }
 }
 
 @media(max-width: 950px){
-    #cocktails_resultst{flex-direction: row;}
-    #cocktail_results_container_2{width: 565px;}
-    #filters{flex-direction: column;justify-content: flex-start;}
-    #filters label{width: 150px;margin-bottom: 15px;}
-
-    #cocktail_results_container{width: 520px;gap: 25px;}
-    .results_box{width: 150px;}
-    .results_box_title{height: 40px;}
-    .results_box_title h1, .results_box_title p{font-size: 0.6rem;}
+    /* Cocktails, mocktails, ingrédients : même empilement (titre / filtres puis grille pleine largeur) */
+    #cocktails_resultst{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search_header{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #cocktail_results{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    #filters{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 100%;
+    }
+    #filters label{
+        min-width: min(220px, calc(50vw - 28px));
+        max-width: min(280px, calc(100vw - 32px));
+        margin-bottom: 0;
+    }
 }
 
 @media(max-width: 925px){
-    .recettes_mini_box{width: 350px;}
+    .recettes_mini_box{
+        max-width: min(350px, calc(100vw - 32px));
+        width: 100%;
+    }
 }
 
 @media(max-width: 800px){
-    .element_container{justify-content: center; gap: 50px;}
-    .element_box{width: 33%;}
+    .element_container{
+        justify-content: center;
+        gap: clamp(28px, 5vw, 64px);
+        padding: 0 clamp(12px, 4vw, 20px);
+    }
+    .element_box{
+        width: clamp(160px, 34vw, 240px);
+        max-width: 240px;
+        flex: 0 0 auto;
+    }
     .element_box:nth-child(3){visibility: hidden;position: absolute;}
+
+    #cocktail_results_container,
+    #cocktail_results_container_2{
+        justify-content: center;
+        gap: clamp(28px, 5vw, 52px);
+        padding: 0 clamp(12px, 4vw, 20px);
+    }
+    .results_box{
+        flex: 0 0 auto;
+        width: clamp(160px, 34vw, 240px);
+        max-width: min(240px, 100%);
+    }
+    .results_box_title{
+        height: auto;
+        min-height: 68px;
+    }
+    .results_box_title h1{font-size: clamp(0.68rem, 1.8vw, 0.8rem);}
+    .results_box_title p{font-size: clamp(0.62rem, 1.6vw, 0.75rem);}
 }
 
 @media(max-width: 750px){
     header li {margin: 0 25px;}
     #cocktail_page .header_nav_scroll li,
     #mocktail_page .header_nav_scroll li,
-    #ingredients_page .header_nav_scroll li{margin: 0 25px;}
-    #cocktail_results_container{width: 390px}
-    .results_box{width: 150px;height: 50%;}
-    .results_box_title{height: 30px;}
-    .results_box_title h1{padding-bottom: 5px;}
+    #ingredients_page .header_nav_scroll li,
+    #drink_detail_page .header_nav_scroll li{margin: 0 25px;}
+    #filters label{
+        min-width: min(260px, calc(100vw - 36px));
+        max-width: min(400px, calc(100vw - 36px));
+    }
+}
+
+/* Filtres ingrédients : une colonne, selects pleine largeur, zone tactile confortable */
+@media(max-width: 640px){
+    #filters{
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px clamp(12px, 4vw, 20px) 12px;
+        gap: 14px;
+    }
+    #filters label{
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px 14px 14px 14px;
+    }
+    #filters label select{
+        min-height: 44px;
+        padding: 10px 12px;
+        margin-top: 6px;
+        border-radius: 12px;
+        background-color: rgba(0,0,0,0.45);
+        border: 1px solid rgba(245,245,245,0.12);
+        font-size: clamp(0.78rem, 3.2vw, 0.88rem);
+    }
+    .filters_reset_btn{
+        align-self: stretch;
+        width: 100%;
+        max-width: min(400px, 100%);
+        margin: 4px auto 0;
+        min-height: 44px;
+    }
 }
 
 @media(max-width:715px){
@@ -1663,45 +1873,98 @@ header button{
 @media(max-width: 625px){
     #ingredients_card{max-width: 90%; padding: 24px 20px;}
     .ingredients_pills{flex-direction: column; align-items: center;}
-    #cocktail_results_container{width: 285px;}
-    #cocktail_results_container_2{width: 490px;}
-    .results_box{width: 125px;}
 }
 
 @media(max-width: 600px){
     header li {margin: 0 15px;}
     #cocktail_page .header_nav_scroll li,
     #mocktail_page .header_nav_scroll li,
-    #ingredients_page .header_nav_scroll li{margin: 0 15px;}
-    #recettes{height: 750px;}
-    #recettes_box{flex-direction: column;align-items: center;}
-    .recettes_mini_box{width: 350px;}
+    #ingredients_page .header_nav_scroll li,
+    #drink_detail_page .header_nav_scroll li{margin: 0 15px;}
+    #recettes{
+        min-height: unset;
+        height: auto;
+        padding: 40px 14px 48px 14px;
+    }
+    #recettes_title{margin-bottom: clamp(28px, 6vw, 44px);}
+    #recettes_box{flex-direction: column;align-items: center; gap: clamp(22px, 5vw, 42px);}
+    .recettes_mini_box{
+        max-width: min(350px, calc(100vw - 28px));
+        width: 100%;
+    }
+    .recettes_mini_icon{
+        width: clamp(72px, 18vw, 100px);
+        height: clamp(72px, 18vw, 100px);
+    }
+    .recettes_mini_icon img{
+        width: clamp(28px, 8vw, 40px);
+        height: clamp(28px, 8vw, 40px);
+    }
     .element_title h1{font-size: 1.75rem;}
     .element_title p, .element_footer h1{margin: 0 auto;}
-    #ingredients_desc{margin: 75px 15px 0 15px;}
 }
 
 @media(max-width: 525px){
     #header_box{width: 0;position: absolute;visibility: hidden;}
     .element_title h1{margin: 0 50px;text-align: center;font-size: 1.5rem;}
     .element_title p, .element_footer h1{margin: 0 auto;}
-    #ingredients_desc{margin: 50px 15px 0 50px;}
     #vertical_header{width: 100%;}
-    .element_box{width: 50%;}
+    .element_container{
+        padding: 0 clamp(14px, 5vw, 24px);
+    }
+    /* Une seule carte visible : largeur confortable pour le texte dans element_box_inner */
+    .element_box{
+        width: min(276px, calc(100vw - 48px));
+        max-width: none;
+        flex: 0 0 auto;
+    }
     .element_box:nth-child(2){visibility: hidden;position: absolute;}
+    .element_box_inner_p{
+        margin: clamp(14px, 4vw, 22px);
+        max-width: 100%;
+    }
+    .element_box_inner p{
+        font-size: clamp(0.72rem, 3.1vw, 0.88rem);
+        line-height: 1.55;
+        letter-spacing: 1.2px;
+    }
     .element_title h1{margin: 0 auto; padding: 0 auto;}
     .element_title p{width: 90%; margin: 0;}
 
     #cocktails_resultst{flex-direction: column;}
-    #filters{flex-direction: row;justify-content: flex-start;overflow-x: auto;scroll-behavior: smooth;white-space: nowrap;padding-bottom: 0;}
-    #filters::-webkit-scrollbar{display: none;}
-    #cocktail_results_container{width: fit-content;justify-content: center;}
-    #cocktail_results_container_2{width: fit-content;justify-content: center;}
-    .results_box{width: 125px;}
+
+    /* Listes cocktails / mocktails / ingrédients : une carte par ligne, même largeur que l’accueil */
+    #cocktail_results_container,
+    #cocktail_results_container_2{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        max-width: none;
+        margin: 32px auto 48px auto;
+        gap: clamp(32px, 6vw, 48px);
+        padding: 0 clamp(14px, 5vw, 24px);
+    }
+    .results_box{
+        flex: 0 0 auto;
+        width: min(276px, calc(100vw - 48px));
+        max-width: min(276px, calc(100vw - 48px));
+    }
+    .results_box_title{
+        height: auto;
+        min-height: 68px;
+        padding: 16px 14px;
+    }
+    .results_box_title h1{
+        font-size: clamp(0.72rem, 3vw, 0.85rem);
+        padding-bottom: 6px;
+    }
+    .results_box_title p{
+        font-size: clamp(0.68rem, 2.8vw, 0.78rem);
+    }
 }
 
 @media(max-width: 425px){
     header{width: auto;}
     .element_title p, .element_footer h1{margin: 0 auto;}
-    #ingredients_desc{margin: 35px 15px 0 35px;}
 }
